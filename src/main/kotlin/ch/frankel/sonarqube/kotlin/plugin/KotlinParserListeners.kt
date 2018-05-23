@@ -30,7 +30,7 @@ class NoExplicitReturnUnitListener : AbstractKotlinParserListener() {
 class NoExplicitReturnTypeExpressionBodyListener : AbstractKotlinParserListener() {
 
     override fun enterFunctionDeclaration(ctx: KotlinParser.FunctionDeclarationContext) {
-        val bodyChildren = ctx.functionBody().children
+        val bodyChildren = ctx.functionBody()?.children ?: return
         if (bodyChildren.size > 1
                 && bodyChildren[0] is TerminalNode && bodyChildren[0].text == "="
                 && ctx.type().isNotEmpty()) {
