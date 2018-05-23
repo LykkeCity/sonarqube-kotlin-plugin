@@ -23,7 +23,7 @@ class Kotlin : AbstractLanguage(KEY, LABEL) {
     override fun getFileSuffixes() = arrayOf(".kt")
 
     companion object {
-        internal const val KEY = "kotlin"
+        internal const val KEY = "Kotlin"
         internal const val LABEL = "Kotlin"
     }
 }

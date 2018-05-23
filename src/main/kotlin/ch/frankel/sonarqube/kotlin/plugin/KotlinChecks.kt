@@ -14,7 +14,7 @@ import kotlin.reflect.full.primaryConstructor
 class KotlinChecks {
 
     companion object {
-        const val REPOSITORY_KEY = "kotlin"
+        const val REPOSITORY_KEY = "Kotlin"
         const val PROFILE_NAME = "Default"
         val checks = arrayOf(NoExplicitReturnUnitCheck(), NoExplicitReturnTypeExpressionBodyCheck())
     }
