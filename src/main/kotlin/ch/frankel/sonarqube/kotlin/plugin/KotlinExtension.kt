@@ -18,7 +18,7 @@ class KotlinPlugin : Plugin {
     }
 }
 
-class Kotlin : AbstractLanguage(KEY, LABEL) {
+class Kotlin : AbstractLanguage("Kotlin", LABEL) {
 
     override fun getFileSuffixes() = arrayOf(".kt")
 
