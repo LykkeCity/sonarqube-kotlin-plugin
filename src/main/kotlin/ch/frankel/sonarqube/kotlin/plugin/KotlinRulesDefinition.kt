@@ -9,7 +9,7 @@ import org.sonar.api.server.rule.RulesDefinition.NewExtendedRepository
 class KotlinRulesDefinition : RulesDefinition {
 
     override fun define(context: Context) {
-        context.createRepository(REPOSITORY_KEY, KEY).apply {
+        context.createRepository(REPOSITORY_KEY, "Kotlin").apply {
             setName("SonarAnalyzer")
             KotlinChecks.checks.forEach {
                 createRule(it)
